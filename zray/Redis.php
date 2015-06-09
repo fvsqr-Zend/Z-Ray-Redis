@@ -8,10 +8,14 @@ class Redis
      */
     private $redis;
 
-    public function init($host, $port)
+    public function init($host, $port=null)
     {
         $this->redis = new \Redis();
-        $this->redis->connect($host, $port);
+        if ($port) {
+            $this->redis->connect($host, $port);
+        } else {
+            $this->redis->connect($host);
+        }
     }
 
     function statusInfo($context, &$storage)
