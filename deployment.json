@@ -1,6 +1,13 @@
 {
   "name" : "redis",
-  "version" : "1.0.0",
+  "display_name" : "Redis",
+  "version" : "1.0.1",
   "type": ["zray"],
-  "logo": "zray/redis-logo.png"
+  "logo": "logo.png",
+  "readme": "README.txt",
+  "dependencies": {
+    "plugin": {
+        "min": "1.0.0"
+    }
+  }
 }
