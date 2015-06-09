@@ -16,8 +16,8 @@ $zre->traceFunction(
     'Redis::connect', 
     function($context, &$storage) use ($zrayRedis) {
         $zrayRedis->init(
-            $context['functionArgs'][0], 
-            $context['functionArgs'][1]
+            $connectionPort = isset($context['functionArgs'][1]) ? $context['functionArgs'][1] : null;
+            $zrayRedis->init($context['functionArgs'][0],  $connectionPort);
         );
     },  
     array($zrayRedis, 'statusInfo')
