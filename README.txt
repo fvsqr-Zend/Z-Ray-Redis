@@ -1,0 +1,1 @@
+The Redis plugin extends Z-Ray to display Redis-specific information, including Redis configuration, memory, cache writes and reads. The plugin adds two additional panels to Z-Ray.
