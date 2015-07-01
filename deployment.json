@@ -5,6 +5,7 @@
   "type": ["zray"],
   "logo": "logo.png",
   "readme": "README.txt",
+  "eula": "LICENSE.txt",
   "dependencies": {
     "plugin": {
         "min": "1.0.0"
